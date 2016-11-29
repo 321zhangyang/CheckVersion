@@ -15,6 +15,7 @@
 		5295E6781DED3309009221FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5295E6761DED3309009221FF /* LaunchScreen.storyboard */; };
 		5295E6831DED3309009221FF /* CheckVersionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5295E6821DED3309009221FF /* CheckVersionTests.m */; };
 		5295E68E1DED3309009221FF /* CheckVersionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5295E68D1DED3309009221FF /* CheckVersionUITests.m */; };
+		5295E69E1DED3336009221FF /* CheckVersionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5295E69D1DED3336009221FF /* CheckVersionHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		5295E6891DED3309009221FF /* CheckVersionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckVersionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5295E68D1DED3309009221FF /* CheckVersionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckVersionUITests.m; sourceTree = "<group>"; };
 		5295E68F1DED3309009221FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5295E69C1DED3336009221FF /* CheckVersionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckVersionHelper.h; sourceTree = "<group>"; };
+		5295E69D1DED3336009221FF /* CheckVersionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckVersionHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		5295E6671DED3309009221FF /* CheckVersion */ = {
 			isa = PBXGroup;
 			children = (
+				5295E69B1DED3319009221FF /* CheckVersionHelper */,
 				5295E66B1DED3309009221FF /* AppDelegate.h */,
 				5295E66C1DED3309009221FF /* AppDelegate.m */,
 				5295E66E1DED3309009221FF /* ViewController.h */,
@@ -138,6 +142,15 @@
 				5295E68F1DED3309009221FF /* Info.plist */,
 			);
 			path = CheckVersionUITests;
+			sourceTree = "<group>";
+		};
+		5295E69B1DED3319009221FF /* CheckVersionHelper */ = {
+			isa = PBXGroup;
+			children = (
+				5295E69C1DED3336009221FF /* CheckVersionHelper.h */,
+				5295E69D1DED3336009221FF /* CheckVersionHelper.m */,
+			);
+			name = CheckVersionHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +289,7 @@
 				5295E6701DED3309009221FF /* ViewController.m in Sources */,
 				5295E66D1DED3309009221FF /* AppDelegate.m in Sources */,
 				5295E66A1DED3309009221FF /* main.m in Sources */,
+				5295E69E1DED3336009221FF /* CheckVersionHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +439,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CheckVersion/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dd.CheckVersion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -436,6 +451,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CheckVersion/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dd.CheckVersion;
 				PRODUCT_NAME = "$(TARGET_NAME)";

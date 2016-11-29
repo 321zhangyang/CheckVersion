@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "CheckVersionHelper.h"
 @interface ViewController ()
 
 @end
@@ -16,6 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    
+    [CheckVersionHelper checkAppVersion:^(NSDictionary *info) {
+        NSLog(@"检查到更新,信息是:%@",info);
+    }];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
